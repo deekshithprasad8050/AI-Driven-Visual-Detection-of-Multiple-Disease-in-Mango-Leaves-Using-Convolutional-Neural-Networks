@@ -1,55 +1,155 @@
-# LeafGuard: Mango Leaf Disease Classification
+# 🌿 LeafGuard: Mango Leaf Disease Classification
 
-LeafGuard is an AI-powered application designed to assist mango farmers by providing instant diagnosis of common mango leaf diseases using a Convolutional Neural Network (CNN) model.
+LeafGuard is an AI-powered web application designed to assist mango farmers by providing instant diagnosis of common mango leaf diseases using a Convolutional Neural Network (CNN) model.
 
-The project is built using a modern Python/Flask backend and a traditional HTML/CSS/JavaScript frontend, utilizing a MySQL database for persistent storage.
+The system uses a Flask backend, a responsive frontend, and a trained deep learning model to classify leaf diseases accurately and efficiently.
 
-## 🚀 Technology Stack
+---
 
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript (JS), Jinja2 Templating
-* **Backend API:** Python 3 (Flask)
+## 🚀 Features
+
+* 📸 Upload mango leaf images
+* 🤖 AI-based disease prediction
+* 📊 Multi-class classification
+* 💬 Chatbot support for disease information
+* 🌐 User-friendly web interface
+
+---
+
+## 🧠 Model Details
+
+* Model: CNN (MobileNetV2-based)
+* Framework: TensorFlow / Keras
+* Accuracy: ~98%
+* Format: `.h5`
+
+---
+
+## 🛠️ Technology Stack
+
+* **Frontend:** HTML5, CSS3, JavaScript, Jinja2
+* **Backend:** Python (Flask)
 * **Database:** MySQL
-* **Machine Learning:** TensorFlow/Keras (`.h5` model file)
+* **Machine Learning:** TensorFlow / Keras
+
+---
 
 ## ⚙️ Setup and Installation
 
-### Prerequisites
+### 📌 Prerequisites
 
-1.  Python (3.9 - 3.11 recommended for TensorFlow compatibility)
-2.  MySQL Server
-3.  Git
+* Python (3.9 – 3.11 recommended)
+* MySQL Server
+* Git
 
-### Steps
+---
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [your-repo-url] leafguard
-    cd leafguard
-    ```
+### 🧩 Steps
 
-2.  **Create and Activate Virtual Environment:**
-    ```bash
-    python -m venv venv
-    # For Windows PowerShell:
-    .\venv\Scripts\Activate.ps1
-    ```
+#### 1. Clone Repository
 
-3.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+git clone https://github.com/deekshithprasad8050/AI-Driven-Visual-Detection-of-Multiple-Disease-in-Mango-Leaves-Using-Convolutional-Neural-Networks.git
+cd AI-Driven-Visual-Detection-of-Multiple-Disease-in-Mango-Leaves-Using-Convolutional-Neural-Networks
+```
 
-4.  **Database Configuration:**
-    * Create a `.env` file based on the template above and fill in your `SECRET_KEY` and `MYSQL_PASSWORD`.
-    * Set up the database schema by running the SQL script against your MySQL server:
-        ```bash
-        # Log into MySQL and run the database.sql content
-        mysql -u root -p leafguard_db < database.sql
-        ```
+---
 
-5.  **Run the Application:**
-    ```bash
-    python app.py
-    ```
+#### 2. Create Virtual Environment
 
-The application will be accessible at `http://127.0.0.1:5000/`.
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+---
+
+#### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+#### 4. Database Setup
+
+Create database:
+
+```sql
+CREATE DATABASE leafguard_db;
+```
+
+Import schema:
+
+```bash
+mysql -u root -p leafguard_db < database.sql
+```
+
+---
+
+#### 5. Run Application
+
+```bash
+python app.py
+```
+
+👉 Open in browser:
+http://127.0.0.1:5000/
+
+---
+
+## 📂 Project Structure
+
+```
+backend/
+ml_model_files/
+src/
+app.py
+config.py
+database.sql
+requirements.txt
+```
+
+---
+
+## 📸 Screenshots (Add Images Here)
+
+* Upload Page
+* Prediction Result
+* Dashboard
+
+(You can add images like below)
+
+```md
+![App Screenshot](screenshots/home.png)
+```
+
+---
+
+## ⚠️ Note
+
+The trained model file is included using Git LFS due to its large size.
+
+---
+
+## 🎯 Use Cases
+
+* Farmers for early disease detection
+* Smart agriculture systems
+* Research applications
+
+---
+
+## 🔮 Future Scope
+
+* Mobile app integration
+* Real-time camera detection
+* Multi-crop disease classification
+* Cloud deployment
+
+---
+
+## 👨‍💻 Author
+
+**Deekshith Prasad R**
